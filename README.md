@@ -56,7 +56,7 @@ My model uses a LeNet structure:
 
 CNN is great for this project because it can fist recognize some of the basic features 
 of traffic signs and then recognize features that are more complex. Because traffic 
-signs¡¯ shape is relatively simple, So two convolutional layer will be enough. 
+signs' shape is relatively simple, So two convolutional layer will be enough. 
 I use a pooling layer to pick the most important feature. Meanwhile, it can decrease 
 the size and make training easier. 
 
