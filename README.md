@@ -25,7 +25,7 @@ Explore, summarize and visualize the data set
 I explored the data in training set and validation set and visualized their 
 distribution. 
 
-![](https://github.com/rainbamboooo/Traffic-Signs-Classifier-Udacity-Self-Driving-Car-Nanodegree-Term1-project3/raw/master/1.png)
+![](https://github.com/rainbamboooo/Traffic-Signs-Classifier-Udacity-Self-Driving-Car-Nanodegree-Term1-project2/raw/master/1.png)
 
 Preprocess the data set 
 -----------------------
@@ -34,7 +34,7 @@ I did grayscale for the data set. Because I think color is not an important fact
 recognize the traffic signs. After doing grayscale, the input decrease from 
 32\*32\*3 to 32\*32\*1. In this way, I think I can get outputs that are more accurate. 
 
-![](https://github.com/rainbamboooo/Traffic-Signs-Classifier-Udacity-Self-Driving-Car-Nanodegree-Term1-project3/raw/master/2.png)
+![](https://github.com/rainbamboooo/Traffic-Signs-Classifier-Udacity-Self-Driving-Car-Nanodegree-Term1-project2/raw/master/2.png)
 
 Design, train and test a model architecture 
 -------------------------------------------
@@ -56,7 +56,7 @@ My model uses a LeNet structure:
 
 CNN is great for this project because it can fist recognize some of the basic features 
 of traffic signs and then recognize features that are more complex. Because traffic 
-signs¡¯ shape is relatively simple, So two convolutional layer will be enough. 
+signsÂ¡Â¯ shape is relatively simple, So two convolutional layer will be enough. 
 I use a pooling layer to pick the most important feature. Meanwhile, it can decrease 
 the size and make training easier. 
 
@@ -70,10 +70,10 @@ Use the model to make predictions on new images
 
 I loaded the new data and preprocessed them. 
 
-![](https://github.com/rainbamboooo/Traffic-Signs-Classifier-Udacity-Self-Driving-Car-Nanodegree-Term1-project3/raw/master/3.png)
+![](https://github.com/rainbamboooo/Traffic-Signs-Classifier-Udacity-Self-Driving-Car-Nanodegree-Term1-project2/raw/master/3.png)
 
-I think these data are relatively same as my training data, although the ¡°70km/h 
-limit¡± sign seems quite strange. There are some letters in the sign that might 
+I think these data are relatively same as my training data, although the Â¡Â°70km/h 
+limitÂ¡Â± sign seems quite strange. There are some letters in the sign that might 
 cause misclassification. 
 
 Using the previous network, the output of prediction is [32  1 41 25  4 13 17].  
@@ -99,7 +99,7 @@ Analyze the softmax probabilities of the new images
 
 The top 5 possibilities predictions for these seven images are: 
 
-![](https://github.com/rainbamboooo/Traffic-Signs-Classifier-Udacity-Self-Driving-Car-Nanodegree-Term1-project3/raw/master/4.png)
+![](https://github.com/rainbamboooo/Traffic-Signs-Classifier-Udacity-Self-Driving-Car-Nanodegree-Term1-project2/raw/master/4.png)
 
-The correct prediction still doesn¡¯t appear in the top 5 possibilities. I think the reason is that the two wrong images are somehow different from my 
+The correct prediction still doesnÂ¡Â¯t appear in the top 5 possibilities. I think the reason is that the two wrong images are somehow different from my 
 training images although they are in the same class. Or I overfit my model. 
