@@ -72,8 +72,8 @@ I loaded the new data and preprocessed them.
 
 ![](https://github.com/rainbamboooo/Traffic-Signs-Classifier-Udacity-Self-Driving-Car-Nanodegree-Term1-project2/raw/master/3.png)
 
-I think these data are relatively same as my training data, although the ¡°70km/h 
-limit¡± sign seems quite strange. There are some letters in the sign that might 
+I think these data are relatively same as my training data, although the "70km/h 
+limit" sign seems quite strange. There are some letters in the sign that might 
 cause misclassification. 
 
 Using the previous network, the output of prediction is [32  1 41 25  4 13 17].  
