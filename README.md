@@ -30,8 +30,8 @@ distribution.
 Preprocess the data set 
 -----------------------
 
-I did grayscale for the data set. Because I think color is not an important factor on 
-recognize the traffic signs. After doing grayscale, the input decrease from 
+I did grayscale for the data set because I think color is not an important factor on 
+recognizing the traffic signs. After doing grayscale, the input decrease from 
 32\*32\*3 to 32\*32\*1. In this way, I think I can get outputs that are more accurate. 
 
 ![](https://github.com/rainbamboooo/Traffic-Signs-Classifier-Udacity-Self-Driving-Car-Nanodegree-Term1-project2/raw/master/2.png)
@@ -56,7 +56,7 @@ My model uses a LeNet structure:
 
 CNN is great for this project because it can fist recognize some of the basic features 
 of traffic signs and then recognize features that are more complex. Because traffic 
-signs' shape is relatively simple, So two convolutional layer will be enough. 
+signs' shape is relatively simple, two convolutional layer will be enough. 
 I use a pooling layer to pick the most important feature. Meanwhile, it can decrease 
 the size and make training easier. 
 
@@ -78,7 +78,7 @@ cause misclassification.
 
 Using the previous network, the output of prediction is [32  1 41 25  4 13 17].  
 I use my eyes to identify that the right label of the images should be [32, 1, 4, 25, 
-38, 13, 17]. That is, I got 5 correct prediction from 7 new images, and the 
+38, 13, 17]. That is, I got 5 correct predictions from 7 new images, and the 
 accuracy is 71.43%.  
 
 Then I evaluated my previous model on test dataset and got an accuracy of 
@@ -92,7 +92,7 @@ here are some reasons:
 2. There are few data. If there are more, I think the total accuracy will go up to 
 90% 
 
-3. Maybe there is overfitting happen on my training process. 
+3. Maybe there is overfitting happened on my training process. 
 
 Analyze the softmax probabilities of the new images 
 ---------------------------------------------------
@@ -101,5 +101,5 @@ The top 5 possibilities predictions for these seven images are:
 
 ![](https://github.com/rainbamboooo/Traffic-Signs-Classifier-Udacity-Self-Driving-Car-Nanodegree-Term1-project2/raw/master/4.png)
 
-The correct prediction still doesn¡¯t appear in the top 5 possibilities. I think the reason is that the two wrong images are somehow different from my 
+The correct prediction still doesn't appear in the top 5 possibilities. I think the reason is that the two wrong images are somehow different from my 
 training images although they are in the same class. Or I overfit my model. 
